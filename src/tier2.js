@@ -43,19 +43,15 @@ for (const insn of Object.values(data)) {
 // ========================
 const manualExtensions = new Set();
 
-for (const file of files) {
-  const name = path.basename(file, ".adoc").toLowerCase();
+function isValidExtension(name) {
+  return /^(z[a-z0-9_]+|[mfdcvaqhsu])$/.test(name);
+}
 
-  // keep only extension-like files
-  if (
-    !name.startsWith("z") &&
-    !name.startsWith("m") &&
-    !name.startsWith("f") &&
-    !name.startsWith("c") &&
-    !name.startsWith("v") &&
-    !name.startsWith("a") &&
-    !name.startsWith("d")
-  ) {
+for (const file of files) {
+  const name = normalize(path.basename(file, ".adoc"));
+
+  // keep only real extension-like filenames
+  if (!isValidExtension(name)) {
     continue;
   }
 

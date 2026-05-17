@@ -2,7 +2,7 @@
 
 Matched Extensions: 25
 JSON only Extensions: 60
-Manual only Extensions: 62
+Manual only Extensions: 41
 
 ============================
 MATCHED:
@@ -17,4 +17,4 @@ i, zknd, zkn, zkne, a, zabha_zacas, zks, zibi, c, c_d, c_f, zicbo, zkr, m, sdext
 ============================
 MANUAL ONLY:
 ============================
-contributors, cfi, csrs, machine, zpm, a-st-ext, atomics-examples, c-st-ext, cmo, code-examples, crypto, d-st-ext, f-st-ext, m-st-ext, matrix, memory-models, mm-appendix, mm-explanatory, mm-formal, v-st-ext, vector-common, vector-examples, za, zaamo, zalrsc, zama, zars, zb, zc, zca, zcd, zce, zcf, zclsd, zf, zfa, zfinx, zi, zic64b, ziccamoa, ziccamoc, ziccif, zicclsm, ziccrse, zicntr, zihintntl, zihintpause, zihpm, zilsd, zkt, zmmul, zp, ztso, zv, zve32f, zve32x, zve64d, zve64f, zve64x, zvfh, zvfhmin, zvk
+zpm, za, zaamo, zalrsc, zama, zars, zb, zc, zca, zcd, zce, zcf, zclsd, zf, zfa, zfinx, zi, zic64b, ziccamoa, ziccamoc, ziccif, zicclsm, ziccrse, zicntr, zihintntl, zihintpause, zihpm, zilsd, zkt, zmmul, zp, ztso, zv, zve32f, zve32x, zve64d, zve64f, zve64x, zvfh, zvfhmin, zvk
