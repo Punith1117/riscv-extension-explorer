@@ -38,6 +38,10 @@ node src/tier1.js
 ```
 node src/tier2.js
 ```
+### Tier 3 – Tests
+```
+node --test
+```
 
 ### Output Example (CLI)
 ```
