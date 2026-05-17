@@ -4,120 +4,120 @@
 
 [EXTENSION SUMMARY]
 
-rv_i | 37 instructions | e.g. add
-rv64_zba | 5 instructions | e.g. add_uw
-rv64_i | 15 instructions | e.g. addiw
-rv32_zknd | 2 instructions | e.g. aes32dsi
-rv32_zk | 10 instructions | e.g. aes32dsi
-rv32_zkn | 10 instructions | e.g. aes32dsi
-rv32_zkne | 2 instructions | e.g. aes32esi
-rv64_zknd | 5 instructions | e.g. aes64ds
-rv64_zkn | 16 instructions | e.g. aes64ds
-rv64_zk | 16 instructions | e.g. aes64ds
-rv64_zkne | 4 instructions | e.g. aes64es
-rv_zabha | 18 instructions | e.g. amoadd_b
-rv64_a | 11 instructions | e.g. amoadd_d
-rv_a | 11 instructions | e.g. amoadd_w
-rv_zabha_zacas | 2 instructions | e.g. amocas_b
-rv_zacas | 2 instructions | e.g. amocas_d
+rv_i | 37 instructions | e.g. add, addi, and
+rv64_zba | 5 instructions | e.g. add_uw, sh1add_uw, sh2add_uw
+rv64_i | 15 instructions | e.g. addiw, addw, ld
+rv32_zknd | 2 instructions | e.g. aes32dsi, aes32dsmi
+rv32_zk | 10 instructions | e.g. aes32dsi, aes32dsmi, aes32esi
+rv32_zkn | 10 instructions | e.g. aes32dsi, aes32dsmi, aes32esi
+rv32_zkne | 2 instructions | e.g. aes32esi, aes32esmi
+rv64_zknd | 5 instructions | e.g. aes64ds, aes64dsm, aes64im
+rv64_zkn | 16 instructions | e.g. aes64ds, aes64dsm, aes64es
+rv64_zk | 16 instructions | e.g. aes64ds, aes64dsm, aes64es
+rv64_zkne | 4 instructions | e.g. aes64es, aes64esm, aes64ks1i
+rv_zabha | 18 instructions | e.g. amoadd_b, amoadd_h, amoand_b
+rv64_a | 11 instructions | e.g. amoadd_d, amoand_d, amomax_d
+rv_a | 11 instructions | e.g. amoadd_w, amoand_w, amomax_w
+rv_zabha_zacas | 2 instructions | e.g. amocas_b, amocas_h
+rv_zacas | 2 instructions | e.g. amocas_d, amocas_w
 rv64_zacas | 1 instructions | e.g. amocas_q
-rv_zbb | 17 instructions | e.g. andn
-rv_zkn | 15 instructions | e.g. andn
-rv_zks | 15 instructions | e.g. andn
-rv_zk | 15 instructions | e.g. andn
-rv_zbkb | 7 instructions | e.g. andn
-rv_zbs | 4 instructions | e.g. bclr
-rv64_zbs | 4 instructions | e.g. bclri
-rv_zibi | 2 instructions | e.g. beqi
-rv_c | 23 instructions | e.g. c_add
-rv64_c | 10 instructions | e.g. c_addiw
-rv_c_d | 4 instructions | e.g. c_fld
-rv32_c_f | 4 instructions | e.g. c_flw
+rv_zbb | 17 instructions | e.g. andn, zext_h, clz
+rv_zkn | 15 instructions | e.g. andn, clmul, clmulh
+rv_zks | 15 instructions | e.g. andn, clmul, clmulh
+rv_zk | 15 instructions | e.g. andn, clmul, clmulh
+rv_zbkb | 7 instructions | e.g. andn, orn, pack
+rv_zbs | 4 instructions | e.g. bclr, bext, binv
+rv64_zbs | 4 instructions | e.g. bclri, bexti, binvi
+rv_zibi | 2 instructions | e.g. beqi, bnei
+rv_c | 23 instructions | e.g. c_add, c_addi, c_addi16sp
+rv64_c | 10 instructions | e.g. c_addiw, c_addw, c_ld
+rv_c_d | 4 instructions | e.g. c_fld, c_fldsp, c_fsd
+rv32_c_f | 4 instructions | e.g. c_flw, c_flwsp, c_fsw
 rv32_c | 1 instructions | e.g. c_jal
-rv_zcb | 11 instructions | e.g. c_lbu
+rv_zcb | 11 instructions | e.g. c_lbu, c_lh, c_lhu
 rv_zcmop | 1 instructions | e.g. c_mop_N
 rv64_zcb | 1 instructions | e.g. c_zext_w
-rv_zicbo | 4 instructions | e.g. cbo_clean
-rv_zbc | 3 instructions | e.g. clmul
-rv_zbkc | 2 instructions | e.g. clmul
-rv64_zbb | 9 instructions | e.g. clzw
+rv_zicbo | 4 instructions | e.g. cbo_clean, cbo_flush, cbo_inval
+rv_zbc | 3 instructions | e.g. clmul, clmulh, clmulr
+rv_zbkc | 2 instructions | e.g. clmul, clmulh
+rv64_zbb | 9 instructions | e.g. clzw, cpopw, ctzw
 rv_zcmt | 1 instructions | e.g. cm_jalt
-rv_zcmp | 6 instructions | e.g. cm_mva01s
-rv_zicsr | 6 instructions | e.g. csrrc
+rv_zcmp | 6 instructions | e.g. cm_mva01s, cm_mvsa01, cm_pop
+rv_zicsr | 6 instructions | e.g. csrrc, csrrci, csrrs
 rv_zkr | 1 instructions | e.g. csrrand
 rv64_zkr | 1 instructions | e.g. csrrand64
-rv_zicond | 2 instructions | e.g. czero_eqz
-rv_m | 8 instructions | e.g. div
-rv64_m | 5 instructions | e.g. divuw
+rv_zicond | 2 instructions | e.g. czero_eqz, czero_nez
+rv_m | 8 instructions | e.g. div, divu, mul
+rv64_m | 5 instructions | e.g. divuw, divw, mulw
 rv_sdext | 1 instructions | e.g. dret
-rv_d | 26 instructions | e.g. fadd_d
-rv_zfh | 22 instructions | e.g. fadd_h
-rv_q | 30 instructions | e.g. fadd_q
-rv_f | 26 instructions | e.g. fadd_s
-rv_zfbfmin | 2 instructions | e.g. fcvt_bf16_s
-rv_d_zfhmin | 2 instructions | e.g. fcvt_d_h
-rv64_d | 6 instructions | e.g. fcvt_d_l
-rv64_zfh | 4 instructions | e.g. fcvt_h_l
-rv_q_zfhmin | 2 instructions | e.g. fcvt_h_q
-rv_zfhmin | 6 instructions | e.g. fcvt_h_s
-rv64_q | 4 instructions | e.g. fcvt_l_q
-rv64_f | 4 instructions | e.g. fcvt_l_s
-rv_d_zfa | 8 instructions | e.g. fcvtmod_w_d
+rv_d | 26 instructions | e.g. fadd_d, fclass_d, fcvt_d_s
+rv_zfh | 22 instructions | e.g. fadd_h, fclass_h, fcvt_h_w
+rv_q | 30 instructions | e.g. fadd_q, fclass_q, fcvt_d_q
+rv_f | 26 instructions | e.g. fadd_s, fclass_s, fcvt_s_w
+rv_zfbfmin | 2 instructions | e.g. fcvt_bf16_s, fcvt_s_bf16
+rv_d_zfhmin | 2 instructions | e.g. fcvt_d_h, fcvt_h_d
+rv64_d | 6 instructions | e.g. fcvt_d_l, fcvt_d_lu, fcvt_l_d
+rv64_zfh | 4 instructions | e.g. fcvt_h_l, fcvt_h_lu, fcvt_l_h
+rv_q_zfhmin | 2 instructions | e.g. fcvt_h_q, fcvt_q_h
+rv_zfhmin | 6 instructions | e.g. fcvt_h_s, fcvt_s_h, flh
+rv64_q | 4 instructions | e.g. fcvt_l_q, fcvt_lu_q, fcvt_q_l
+rv64_f | 4 instructions | e.g. fcvt_l_s, fcvt_lu_s, fcvt_s_l
+rv_d_zfa | 8 instructions | e.g. fcvtmod_w_d, fleq_d, fli_d
 rv_zifencei | 1 instructions | e.g. fence_i
-rv_zfh_zfa | 7 instructions | e.g. fleq_h
-rv_q_zfa | 7 instructions | e.g. fleq_q
-rv_f_zfa | 7 instructions | e.g. fleq_s
-rv32_d_zfa | 2 instructions | e.g. fmvh_x_d
-rv64_q_zfa | 2 instructions | e.g. fmvh_x_q
-rv64_zbp | 5 instructions | e.g. gorci
-rv_h | 13 instructions | e.g. hfence_gvma
-rv_svinval_h | 2 instructions | e.g. hinval_gvma
-rv64_h | 3 instructions | e.g. hlv_d
-rv_zalasr | 8 instructions | e.g. lb_aq
+rv_zfh_zfa | 7 instructions | e.g. fleq_h, fli_h, fltq_h
+rv_q_zfa | 7 instructions | e.g. fleq_q, fli_q, fltq_q
+rv_f_zfa | 7 instructions | e.g. fleq_s, fli_s, fltq_s
+rv32_d_zfa | 2 instructions | e.g. fmvh_x_d, fmvp_d_x
+rv64_q_zfa | 2 instructions | e.g. fmvh_x_q, fmvp_q_x
+rv64_zbp | 5 instructions | e.g. gorci, grevi, shfli
+rv_h | 13 instructions | e.g. hfence_gvma, hfence_vvma, hlv_b
+rv_svinval_h | 2 instructions | e.g. hinval_gvma, hinval_vvma
+rv64_h | 3 instructions | e.g. hlv_d, hlv_wu, hsv_d
+rv_zalasr | 8 instructions | e.g. lb_aq, ld_aq, lh_aq
 rv_smrnmi | 1 instructions | e.g. mnret
-rv_zimop | 2 instructions | e.g. mop_r_N
-rv_system | 2 instructions | e.g. mret
-rv64_zbkb | 5 instructions | e.g. packw
-rv64_zks | 5 instructions | e.g. packw
+rv_zimop | 2 instructions | e.g. mop_r_N, mop_rr_N
+rv_system | 2 instructions | e.g. mret, wfi
+rv64_zbkb | 5 instructions | e.g. packw, rolw, rori
+rv64_zks | 5 instructions | e.g. packw, rolw, rori
 rv_ssctr | 1 instructions | e.g. sctrclr
-rv_svinval | 3 instructions | e.g. sfence_inval_ir
-rv_s | 2 instructions | e.g. sfence_vma
-rv_zba | 3 instructions | e.g. sh1add
-rv_zknh | 4 instructions | e.g. sha256sig0
-rv64_zknh | 4 instructions | e.g. sha512sig0
-rv32_zknh | 6 instructions | e.g. sha512sig0h
-rv_zksh | 2 instructions | e.g. sm3p0
-rv_zksed | 2 instructions | e.g. sm4ed
-rv_zicfiss | 2 instructions | e.g. ssamoswap_d
+rv_svinval | 3 instructions | e.g. sfence_inval_ir, sfence_w_inval, sinval_vma
+rv_s | 2 instructions | e.g. sfence_vma, sret
+rv_zba | 3 instructions | e.g. sh1add, sh2add, sh3add
+rv_zknh | 4 instructions | e.g. sha256sig0, sha256sig1, sha256sum0
+rv64_zknh | 4 instructions | e.g. sha512sig0, sha512sig1, sha512sum0
+rv32_zknh | 6 instructions | e.g. sha512sig0h, sha512sig0l, sha512sig1h
+rv_zksh | 2 instructions | e.g. sm3p0, sm3p1
+rv_zksed | 2 instructions | e.g. sm4ed, sm4ks
+rv_zicfiss | 2 instructions | e.g. ssamoswap_d, ssamoswap_w
 rv_u | 1 instructions | e.g. uret
-rv_v | 627 instructions | e.g. vaadd_vv
-rv_zvabd | 5 instructions | e.g. vabd_vv
-rv_zvkned | 11 instructions | e.g. vaesdf_vs
-rv_zvkn | 23 instructions | e.g. vaesdf_vs
-rv_zvbb | 16 instructions | e.g. vandn_vv
-rv_zvks | 14 instructions | e.g. vandn_vv
-rv_zvbc | 4 instructions | e.g. vclmul_vv
+rv_v | 627 instructions | e.g. vaadd_vv, vaadd_vx, vaaddu_vv
+rv_zvabd | 5 instructions | e.g. vabd_vv, vabdu_vv, vabs_v
+rv_zvkned | 11 instructions | e.g. vaesdf_vs, vaesdf_vv, vaesdm_vs
+rv_zvkn | 23 instructions | e.g. vaesdf_vs, vaesdf_vv, vaesdm_vs
+rv_zvbb | 16 instructions | e.g. vandn_vv, vandn_vx, vbrev8_v
+rv_zvks | 14 instructions | e.g. vandn_vv, vandn_vx, vbrev8_v
+rv_zvbc | 4 instructions | e.g. vclmul_vv, vclmul_vx, vclmulh_vv
 rv_zvfbdot32f | 1 instructions | e.g. vfbdot_vv
 rv_zvfofp4min | 1 instructions | e.g. vfext_vf2
-rv_zvfofp8min | 3 instructions | e.g. vfncvt_f_f_q
-rv_zvfbfmin | 2 instructions | e.g. vfncvtbf16_f_f_w
-rv_zvfqbdot8f | 2 instructions | e.g. vfqbdot_alt_vv
-rv_zvfqldot8f | 2 instructions | e.g. vfqldot_alt_vv
+rv_zvfofp8min | 3 instructions | e.g. vfncvt_f_f_q, vfncvt_sat_f_f_q, vfncvtbf16_sat_f_f_w
+rv_zvfbfmin | 2 instructions | e.g. vfncvtbf16_f_f_w, vfwcvtbf16_f_f_v
+rv_zvfqbdot8f | 2 instructions | e.g. vfqbdot_alt_vv, vfqbdot_vv
+rv_zvfqldot8f | 2 instructions | e.g. vfqldot_alt_vv, vfqldot_vv
 rv_zvfwbdot16bf | 1 instructions | e.g. vfwbdot_vv
 rv_zvfwldot16bf | 1 instructions | e.g. vfwldot_vv
-rv_zvfbfwma | 2 instructions | e.g. vfwmaccbf16_vf
-rv_zvkg | 2 instructions | e.g. vghsh_vv
-rv_zvzip | 5 instructions | e.g. vpaire_vv
-rv_zvqbdot8i | 2 instructions | e.g. vqbdots_vv
-rv_zvqdotq | 7 instructions | e.g. vqdot_vv
-rv_zvqldot8i | 2 instructions | e.g. vqldots_vv
-rv_zvknha | 3 instructions | e.g. vsha2ch_vv
-rv_zvknhb | 3 instructions | e.g. vsha2ch_vv
-rv_zvksh | 2 instructions | e.g. vsm3c_vi
-rv_zvksed | 3 instructions | e.g. vsm4k_vi
-rv_zawrs | 2 instructions | e.g. wrs_nto
+rv_zvfbfwma | 2 instructions | e.g. vfwmaccbf16_vf, vfwmaccbf16_vv
+rv_zvkg | 2 instructions | e.g. vghsh_vv, vgmul_vv
+rv_zvzip | 5 instructions | e.g. vpaire_vv, vpairo_vv, vunzipe_v
+rv_zvqbdot8i | 2 instructions | e.g. vqbdots_vv, vqbdotu_vv
+rv_zvqdotq | 7 instructions | e.g. vqdot_vv, vqdot_vx, vqdotsu_vv
+rv_zvqldot8i | 2 instructions | e.g. vqldots_vv, vqldotu_vv
+rv_zvknha | 3 instructions | e.g. vsha2ch_vv, vsha2cl_vv, vsha2ms_vv
+rv_zvknhb | 3 instructions | e.g. vsha2ch_vv, vsha2cl_vv, vsha2ms_vv
+rv_zvksh | 2 instructions | e.g. vsm3c_vi, vsm3me_vv
+rv_zvksed | 3 instructions | e.g. vsm4k_vi, vsm4r_vs, vsm4r_vv
+rv_zawrs | 2 instructions | e.g. wrs_nto, wrs_sto
 rv_zbp | 1 instructions | e.g. xperm16
-rv_zbkx | 2 instructions | e.g. xperm4
+rv_zbkx | 2 instructions | e.g. xperm4, xperm8
 
 =================================
 [MULTI-EXTENSION INSTRUCTIONS]

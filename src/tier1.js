@@ -40,11 +40,14 @@ for (const [mnemonic, info] of Object.entries(data)) {
     if (!extensionMap[ext]) {
       extensionMap[ext] = {
         count: 0,
-        example: mnemonic
+        examples: []
       };
     }
 
     extensionMap[ext].count += 1;
+    if (extensionMap[ext].examples.length < 3) {
+        extensionMap[ext].examples.push(mnemonic);
+    }
   }
 }
 
@@ -59,7 +62,7 @@ log("=================================\n");
 log("[EXTENSION SUMMARY]\n");
 
 for (const [ext, info] of Object.entries(extensionMap)) {
-  log(`${ext} | ${info.count} instructions | e.g. ${info.example}`);
+  log(`${ext} | ${info.count} instructions | e.g. ${info.examples.join(", ")}`);
 }
 
 log("\n=================================");
