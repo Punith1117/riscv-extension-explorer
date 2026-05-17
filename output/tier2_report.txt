@@ -1,0 +1,20 @@
+=== RISC-V TIER 2 REPORT ===
+
+Matched Extensions: 25
+JSON only Extensions: 60
+Manual only Extensions: 62
+
+============================
+MATCHED:
+============================
+zba, zk, zabha, zacas, zbb, zbkb, zbs, zcb, zcmop, zbc, zbkc, zcmt, zcmp, zicsr, zicond, zfh, zfbfmin, zfhmin, zifencei, zalasr, zimop, zvfbfmin, zvfbfwma, zawrs, zbkx
+
+============================
+JSON ONLY:
+============================
+i, zknd, zkn, zkne, a, zabha_zacas, zks, zibi, c, c_d, c_f, zicbo, zkr, m, sdext, d, q, f, d_zfhmin, q_zfhmin, d_zfa, zfh_zfa, q_zfa, f_zfa, zbp, h, svinval_h, smrnmi, system, ssctr, svinval, s, zknh, zksh, zksed, zicfiss, u, v, zvabd, zvkned, zvkn, zvbb, zvks, zvbc, zvfbdot32f, zvfofp4min, zvfofp8min, zvfqbdot8f, zvfqldot8f, zvfwbdot16bf, zvfwldot16bf, zvkg, zvzip, zvqbdot8i, zvqdotq, zvqldot8i, zvknha, zvknhb, zvksh, zvksed
+
+============================
+MANUAL ONLY:
+============================
+contributors, cfi, csrs, machine, zpm, a-st-ext, atomics-examples, c-st-ext, cmo, code-examples, crypto, d-st-ext, f-st-ext, m-st-ext, matrix, memory-models, mm-appendix, mm-explanatory, mm-formal, v-st-ext, vector-common, vector-examples, za, zaamo, zalrsc, zama, zars, zb, zc, zca, zcd, zce, zcf, zclsd, zf, zfa, zfinx, zi, zic64b, ziccamoa, ziccamoc, ziccif, zicclsm, ziccrse, zicntr, zihintntl, zihintpause, zihpm, zilsd, zkt, zmmul, zp, ztso, zv, zve32f, zve32x, zve64d, zve64f, zve64x, zvfh, zvfhmin, zvk
