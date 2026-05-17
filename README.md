@@ -19,6 +19,7 @@ It generates a coverage report showing how well the JSON instruction dataset ali
   - CLI summary (top 20 samples)
   - Full detailed report file
   - Normalizes extension naming differences (rv_zba -> zba)
+- Builds an extensions co-occurrence graph (undirected)
 
 ## Installation
 ```
@@ -38,6 +39,21 @@ node src/tier1.js
 ```
 node src/tier2.js
 ```
+
+### Graph – Extensions Co-occurrence
+Builds an undirected graph where:
+- nodes = normalized extension names
+- an edge between A and B exists if there is at least one instruction whose `extension` array contains both A and B
+
+```
+node src/extensions-graph.js
+sudo apt install graphviz
+dot -Tpng output/extensions_graph.dot -o output/extensions_graph.png
+```
+
+PNG preview:
+![RISC-V Extensions Co-occurrence Graph](output/extensions_graph.png)
+
 ### Tier 3 – Tests
 ```
 node --test
@@ -59,13 +75,16 @@ i, q, d_zfa, zfh_zfa, ...
 
 MANUAL ONLY (sample 20):
 zicntr, zicbom, ztso, zmmul, ...
-📄 Output File
 
 ```
+## Output File
+
 A full report is generated at:
+output/report.txt,
 output/tier2_report.txt
 
 It contains:
+- Extension grouping
 - Full matched extension list
 - Full JSON-only extensions
 - Full manual-only extensions
